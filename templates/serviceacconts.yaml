@@ -1,4 +1,4 @@
-apiVersion: {{ .Values.rbacApiVersion }}/v1
+apiVersion: {{ .Values.rbacApiVersion }}
 kind: ClusterRole
 metadata:
   name: system:controller:operator-lifecycle-manager
@@ -15,7 +15,7 @@ metadata:
   name: olm-operator-serviceaccount
   namespace: {{ .Release.Namespace }}
 ---
-apiVersion: {{ .Values.rbacApiVersion }}/v1
+apiVersion: {{ .Values.rbacApiVersion }}
 kind: ClusterRoleBinding
 metadata:
   name: olm-operator-binding-{{ .Release.Namespace }}
