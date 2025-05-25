@@ -1,1 +1,2 @@
-installType: "upstream"
+rbacApiVersion: "rbac.authorization.k8s.io"
+installType: "upstream" 
