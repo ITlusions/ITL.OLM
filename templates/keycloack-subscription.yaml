@@ -6,4 +6,6 @@ metadata:
 spec:
   channel: fast
   name: keycloak-operator
+  source: operatorhubio-catalog
+  sourceNamespace: olm
   installPlanApproval: Manual
