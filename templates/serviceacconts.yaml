@@ -20,7 +20,7 @@ kind: ClusterRoleBinding
 metadata:
   name: olm-operator-binding-{{ .Release.Namespace }}
 roleRef:
-  apiGroup: {{ .Values.rbacApiVersion }}
+  apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole
   name: system:controller:operator-lifecycle-manager
 subjects:
